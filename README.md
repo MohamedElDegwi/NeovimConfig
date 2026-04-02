@@ -23,9 +23,11 @@ counts. It's also a good break from the headaches of coding ;)
    on how to install them on Linux.
 3. **Prerequisites:** there are some packages you need to make it work,
 ```bash
-sudo apt install xclip ripgrep 
+sudo apt install xclip ripgrep fd-find 
+tree-sitter -> for treesitter needs, you can check their repo for more info.
 ```
 Note: there is some more, you will figure it out anyway too lazy to list it all to be honest haha.
+Another note: As a rule of thumb, it's always good idea to run ":checkhealth" to see if there is something missing/wrong.
 
 4. **Installation:** Place the `nvim` directory under `~/.config/` and run `nvim`.
 
