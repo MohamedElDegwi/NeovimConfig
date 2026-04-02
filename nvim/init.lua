@@ -1,4 +1,9 @@
-require("core.keymaps")
 require("core.options")
-require("core.lazy")
-require("core.lsp")
+require("core.keymaps")
+require("plugins.init")
+require("lsp.init")
+
+
+
+
+vim.cmd.colorscheme("rose-pine")

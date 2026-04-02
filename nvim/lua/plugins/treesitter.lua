@@ -1,5 +1,4 @@
-return {
-    "nvim-treesitter/nvim-treesitter",
-    lazy = false,
-    build = ":TSUpdate",
+vim.pack.add {
+  { src = 'https://github.com/nvim-treesitter/nvim-treesitter' },
+  { src = 'https://github.com/nvim-lua/plenary.nvim' },
 }
