@@ -21,12 +21,13 @@ counts. It's also a good break from the headaches of coding ;)
    * Here is an
    [article](https://medium.com/@almatins/install-nerdfont-or-any-fonts-using-the-command-line-in-debian-or-other-linux-f3067918a88c)
    on how to install them on Linux.
-4. Prerequisites: there are some packages you need to make it work,
+3. Prerequisites: there are some packages you need to make it work,
 ```bash
 sudo apt install xclip ripgrep 
 ```
 Note: there is some more, you will figure it out anyway too lazy to list it all to be honest haha.
-3. **Installation:** Place the `nvim` directory under `~/.config/` and run `nvim`.
+
+4. **Installation:** Place the `nvim` directory under `~/.config/` and run `nvim`.
 
 ```bash
 # Example
