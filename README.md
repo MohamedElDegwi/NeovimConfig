@@ -10,8 +10,8 @@ This config is not a finished product, it needs **a lot** of improvemnts and ref
 now out of the box.
 However, I **HIGHLY** recommend against using it unless you are **AWARE** of what you are doing.
 
-Neovim configuration is a beautiful journey, so make sure to learn how to do it yourself—that is the skill that
-counts. It's also a good break from the headaches of programming ;)
+Neovim configuration is a beautiful journey, so make sure to learn how to do it yourself, that's the skill that
+counts. It's also a good break from the headaches of coding ;)
 
 ## How to make it work
 
@@ -21,6 +21,11 @@ counts. It's also a good break from the headaches of programming ;)
    * Here is an
    [article](https://medium.com/@almatins/install-nerdfont-or-any-fonts-using-the-command-line-in-debian-or-other-linux-f3067918a88c)
    on how to install them on Linux.
+4. Prerequisites: there are some packages you need to make it work,
+```bash
+sudo apt install xclip ripgrep 
+```
+Note: there is some more, you will figure it out anyway too lazy to list it all to be honest haha.
 3. **Installation:** Place the `nvim` directory under `~/.config/` and run `nvim`.
 
 ```bash
@@ -32,11 +37,10 @@ nvim
 
 Neovim v0.11+ has native support for [LSPs](https://neovim.io/doc/user/lsp.html).
 
-This configuration sets up **Lua**, **C++**, and **Rust** by default (the C++ setup needs a lot of improvement,
-though).
+This configuration sets up **Lua**, **Go**, and **Rust** by default.
 
-However, they won't work unless `rust-analyzer`, `lua-language-server`, and `ccls` are readable from your
-`$PATH`. If you are working with Rust or C++, just make sure you have those binaries installed and
+However, they won't work unless `rust-analyzer`, `lua-language-server`, and `gopls` are readable from your
+`$PATH`. If you are working with Rust or Go, just make sure you have those binaries installed and
 you are ready to go.
 
 **For other languages:**
@@ -44,5 +48,4 @@ you are ready to go.
 2. Copy the community configuration for that server from 
     [here](https://github.com/neovim/nvim-lspconfig/tree/master/lsp).
 3. Place the file in `~/.config/nvim/lsp`.
-4. Enable it with `vim.lsp.enable('name_of_server')` in `~/.config/nvim/lua/core/lsp.lua` and whop!
-Now it's working :)
+4. Enable it with `vim.lsp.enable('name_of_server')` in `~/.config/nvim/lua/lsp/init.lua` and whop! It's working :)
