@@ -21,7 +21,7 @@ counts. It's also a good break from the headaches of coding ;)
    * Here is an
    [article](https://medium.com/@almatins/install-nerdfont-or-any-fonts-using-the-command-line-in-debian-or-other-linux-f3067918a88c)
    on how to install them on Linux.
-3. Prerequisites: there are some packages you need to make it work,
+3. **Prerequisites:** there are some packages you need to make it work,
 ```bash
 sudo apt install xclip ripgrep 
 ```
